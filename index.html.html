@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laxman's Portfolio</title>
+    <link rel="stylesheet" href="../CSS CODE/styles.css"> <!-- CSS File link -->
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="../Audios/Images/img_girl.jpg" alt="Laxman's Profile Photo">
+        </div>
+        <h1>Laxman</h1> 
+        <p>Web Developer | Front-End Enthusiast</p>
+        
+    </header>
+    <section>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+</section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p style="background-color: powderblue;">Hello, I'm Laxman. I'm learning HTML, CSS, and JavaScript. I'm passionate about front-end development and creating user-friendly web designs.</p>
+        <hr>
+        <p>I'm a web development enthusiast from [Ranchi]. I enjoy building websites and learning new technologies. I'm currently mastering front-end development, and I aim to become a full-stack developer.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>Project 1: My First Website</h3>
+            <p>A simple website using HTML and CSS.</p>
+            <p>This is a responsive payment form website built using HTML, CSS, and a bit of JavaScript.</p>
+        <a href="../HTML CODE/Payment_form.html">View Project</a>
+        </div>
+        <div>
+            <h3>Project 2: JavaScript To-Do App</h3>
+            <p>A to-do app created using vanilla JavaScript.</p>
+            <a href="../HTML CODE/html5 code/Flipkart.html">View Project</a>
+        </div>
+        <div id="project-list">
+            <h3>Project 3: My Third Website</h3>
+            <p>A simple website using HTML and CSS.</p>
+            <a href="../HTML CODE/moon.html">View Project</a>
+        </div>
+        <button id="show-more">Show More Projects</button>
+    </section>
+
+   
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: laxmankumar6089@gmail.com</p>
+        <p>Phone No: 6203523445, 9470936805</p>
+        <address>At. NapoKhurd, p/o-GosainBalia, p/s:Barkagaon, Distric: Hazaribagh, Jharkhand</address>
+    </section>
+
+    <script>
+        document.getElementById('show-more').addEventListener('click', function() {
+        const projectList = document.getElementById('project-list');
+        projectList.innerHTML += `
+        <h3>Project 2: JavaScript To-Do App</h3>
+        <p>A to-do app created using vanilla JavaScript.</p>
+        `;
+        });
+    </script>
+
+    <!-- Scroll to Top Button -->
+<button id="scrollTopBtn" style="display: none;">Top</button>
+
+<script>
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+};
+
+scrollTopBtn.addEventListener('click', function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar background hamberger-nav-resp">
+        <ul class="nav-list visiblity-nav-resp">
+            <div class="logo"><img src="CSS/logo image of nature.png" alt="profile"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Help">Help</a></li>
+        </ul>
+        <div class="right-menu visiblity-nav-resp">
+            <input type="search" placeholder="type anything.." name="searchMenu" id="Search">
+            <button class="btn smbtn">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="textbig firstheading">Saving Earth and humanity</p>
+                <p class="textsmall firstpara">the consequences will be devastating, not only
+                    for the environment but also for sit amet consectetur adipisicing elit. Ullam voluptate maxime
+                    vitae
+                    cumque porro alias accusantium placeat maiores quo odio saepe rerum, possimus eius quas itaque
+                    laudantium, labore officia? Voluptatum dolores dignissimos facere saepe!</p>
+                <div class="buttons">
+                    <button class="btn-sec"><a class="sub-View"
+                            href="https://youtu.be/nllqkdHxMac?si=kHfDw_Oik1eSs4AN">Subscribe</a></button>
+                    <button class="btn-sec"><a class="sub-View" href="https://www.youtube.com/">Watch Video</a></button>
+                </div>
+            </div>
+            <div class="secondhalf">
+                <img src="CSS/green-grass with sun.avif" alt="logo-img">
+            </div>
+        </div>
+    </section>
+    <section class="Section">
+        <div class="paras">
+            <p class="headPara textbig">The Impact of Consumerism on the Environment</p>
+            <p class="subPara textsmall">Consumerism, defined as the constant and often excessive demand for goods and
+                services, has had a profound and detrimental effect on the environment. As societies become more focused
+                on material wealth and instant gratification, the demand for products continues to rise at an
+                unsustainable rate. This insatiable desire for goods leads to overproduction, which in turn results in
+                resource depletion, increased waste, and more pollution. as it contributes to global plastic pollution,
+                harming
+                wildlife and ecosystems.
+                omnis esse.</p>
+        </div>
+        <div class="thumbnail"><img class="img-fluid" src="CSS/village imag`e.jpg" alt="village- image"></div>
+    </section>
+    <section class="Section left-section">
+        <div class="paras">
+            <p class="headPara textbig">The Role of Technology in Saving the Planet</p>
+            <p class="subPara textsmall">Technology has the power to revolutionize the way we address environmental
+                issues and protect the planet for future generations. Over the past few decades, advancements in
+                technology have introduced groundbreaking solutions to some of the most pressing challenges facing
+                Earth. Renewable energy technologies, such as solar, wind, and hydropower, have made it possible to
+                reduce our reliance on fossil fuels, helping to mitigate the devastating carbon emissions and promoting
+                cleaner air in urban areas. Additionally,
+                precision farming techniques, powered by AI and satellite technology, enable farmers to optimize water
+                usage, reduce pesticide use, and improve crop yields while minimizing environmental impact.</p>
+        </div>
+        <div class="thumbnail"><img class="img-fluid" src="CSS/role of technology in saving planet.webp"
+                alt="village- image"></div>
+    </section>
+    <section class="Section">
+        <div class="paras">
+            <p class="headPara textbig">Nothing is Best in Human Life.</p>
+            <p class="subPara textsmall">Saving Earth and humanity requires immediate and collective action. Our planet
+                faces numerous challenges, from climate change and deforestation to pollution and loss of biodiversity.
+                If we continue on this path of unsustainable practices, the consequences will be devastating, not only
+                for the environment but also for future generations of humans. To safeguard both Earth and humanity, we
+                must transition to renewable energy sources, reduce waste, and embrace sustainable lifestyles.
+                Governments, businesses, and individuals all have roles to play.</p>
+        </div>
+        <div class="thumbnail"><img class="img-fluid" src="CSS/tree long trre.jpg" alt="village- image"></div>
+    </section>
+
+    <section class="Section left-section">
+        <div class="paras">
+            <p class="headPara textbig">Best in Human Life.</p>
+            <p class="subPara textsmall">We must adopt policies that prioritize
+                environmental protection and hold corporations accountable for their ecological footprints. Education
+                and awareness are also key—people must understand the urgency of the situation and take responsibility
+                for their actions. By fostering a sense of global solidarity and responsibility, we can protect the
+                Earth’s delicate ecosystems, mitigate the effects of climate change, and ensure a livable world for
+                generations to come. The time to act is now.</p>
+        </div>
+        <div class="thumbnail"><img class="img-fluid" src="CSS/4 section image.jpg" alt="village- image"></div>
+    </section>
+    <!-- Contact Us form  -->
+    <section class="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <form class="form-container" action="#">
+            <input type="text" placeholder="Enter your name..">
+            <input type="number" name="phone" id="phone" placeholder="Enter your number">
+            <input type="email" name="email" placeholder="Enter your email" id="email">
+            <textarea placeholder="Leave a comment" rows="2" name="comment" id="cmt-text"></textarea>
+            <button class="btn-dark">Submit</button>
+        </form>
+    </section>
+    <!-- footer  -->
+    <footer class="background footer-part">
+        <p class="text-footer">
+            copyright &copy; 2025 savingearth.com <img class="footer-logo" src="CSS/logo image of nature.png" alt="">
+            All right reserved
+        </p>
+    </footer>
+
+    <script>
+        let burger = document.querySelector('.burger');
+        let navbar = document.querySelector('.navbar');
+        let navList = document.querySelector('.nav-list');
+        let rightMenu = document.querySelector('.right-menu');
+        // let navbar = document.querySelector('.navbar');
+
+        burger.addEventListener('click', () => {
+            navList.classList.toggle('visiblity-nav-resp')
+            rightMenu.classList.toggle('visiblity-nav-resp')
+            navbar.classList.toggle('hamberger-nav-resp')
+        })
+    </script>
+</body>
+
+</html>
